@@ -1,15 +1,18 @@
 fun main() {
     val name = "Madrigal"
-    var healthPoints = 89
+    var healthPoints = 90
     val isBlessed = true
     val isImmortal = false
 
+    //AURA
+    val auraVisible = isBlessed && healthPoints > 50 || isImmortal
 
-        if(isBlessed && healthPoints > 50 || isImmortal){
+        if(auraVisible){
             println("GREEN")
         } else {
             println("NONE")
         }
+
 
     if(healthPoints == 100) {
         println(name + " is in excellent health")
