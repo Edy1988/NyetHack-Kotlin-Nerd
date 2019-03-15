@@ -22,5 +22,6 @@ fun main() {
     else " looks pretty hurt"
 
 
-    println(name + " " + healthStatus)
+    println("$name $healthStatus")
 }
+
